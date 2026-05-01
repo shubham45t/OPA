@@ -1,6 +1,8 @@
 package auth
 
-allow if{
+default allow = false
+
+allow if {
     input.user.role == "admin"
 }
 
